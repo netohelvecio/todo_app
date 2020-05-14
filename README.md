@@ -3,7 +3,7 @@
 </div>
 &nbsp;
 <div align="center">
-  <a href="todo-0app.netlify.app">Acesar demostração</a>
+  <a href="https://todo-0app.netlify.app/">Acessar demostração</a>
 </div>
 
 ## :bookmark: Sobre
