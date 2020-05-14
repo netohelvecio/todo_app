@@ -1,0 +1,62 @@
+@import '../../global';
+
+div {
+  > div {
+    @include flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 20px;
+  
+    h2 {
+      font-size: 32px;
+      color: $font-color;
+      margin: 20px 0;
+      margin-bottom: 8px;
+    }
+
+    span {
+      font-size: 18px;
+      color: #cd162d;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      @include flex;
+      width: 100%;
+  
+      input {
+        background: #fff;
+        color: #333;
+        border: 0;
+        border-radius: 4px;
+        height: 42px;
+        padding: 0 14px;
+        font-size: 18px;
+        margin-right: 10px;
+        flex: 1;
+  
+        &:focus {
+          border: 2px solid $border-color; 
+        }
+      }
+  
+      button {
+        @include flex;
+        background: $btn-color;
+        border: 0;
+        border-radius: 8px;
+        transition: background 0.2s;
+        width: 20%;
+        height: 42px;
+        padding: 0 25px;
+  
+        &:hover {
+          background: darken($btn-color, 5%);
+        }
+      }
+    }
+  }
+}
+

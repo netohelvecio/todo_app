@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+$primary-color: #6987C9;
+$font-color: #F9F9F9;
+$border-color: #b9b9b9;
+$btn-color: #FF1053;
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html, body, #root {
+  @include flex;
+  justify-content: initial;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: $primary-color;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button, textarea {
+  font: 14px 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
